@@ -2,8 +2,19 @@ pipeline {
   agent any
   stages {
     stage('checkout') {
-      steps {
-        echo 'checkout compalte'
+      parallel {
+        stage('checkout demo 1') {
+          steps {
+            echo 'checkout compalte'
+          }
+        }
+
+        stage('checkout demo2') {
+          steps {
+            echo 'compalte'
+          }
+        }
+
       }
     }
 
