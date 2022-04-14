@@ -8,7 +8,7 @@ pipeline {
                 echo 'checkout compalte..'
             }
         }
-            stages {
+           
         stage('Build') {
             steps {
                 echo 'Building..'
